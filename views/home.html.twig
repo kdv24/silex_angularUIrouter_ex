@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/../css/styles.css">
+        <title>Tester whatsit!1!</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Yay! I'm an h1 element in a real-live HTML page! Hard-coded, baby!</h1>
+            <h2 id="whoa">{{ whoa }}</h2>
+
+            <div class="col-md-6">
+                <div id="angular-box" ng-app="thinger">
+                    <div ui-view></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <p>But what if we want to add to the outer page?</p>
+                <form action="/add-thing" method="post">
+                    <div class="form-group">
+                        <input type="text" name="word" id="word" class="form-control" placeholder="Type literally anything here">
+                    </div>
+                    <button type="submit" class="btn">gimme</button> 
+                </form>
+            </div>
+        </div>
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-ui-router.js"></script>
+        <script src="app.js"></script>
+        <script src="controllers/OhgodhelpController.js"></script>
+        <script src="services/OhgodhelpFactory.js"></script>
+    </body>
+</html>

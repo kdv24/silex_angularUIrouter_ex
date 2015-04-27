@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #ff00ff;
+    font-size: 80%;
+}
+
+a:hover {
+    color: #ef00aa;
+    cursor: pointer;
+}
+
+.clickme:hover {
+    cursor: pointer;
+}
+
+#angular-box {
+    border: solid 1px #ff00ff;
+}
+
+#whoa {
+    margin-bottom: 10%;
+}
+
+#words {
+    margin-top: 5%;
+}

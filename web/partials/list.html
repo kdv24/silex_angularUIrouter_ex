@@ -1,0 +1,13 @@
+<div class="col-sm-6">
+    <ul>
+        <h4>Budgets:</h4>
+        <li ng-repeat="item in stuvv | filter:{type: 'budget'}">{{ item.name }} <a ng-click="switchType(item)">switch my type!</a></li>
+    </ul>
+</div>
+
+<div class="col-sm-6">
+    <h4>Jerks:</h4>
+    <ul>
+        <li ng-repeat="item in stuvv | filter:{type: 'jerk'}">{{ item.name }} <a ng-click="switchType(item)">switch my type!</a></li>
+    </ul>
+</div>
